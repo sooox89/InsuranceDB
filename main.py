@@ -3,6 +3,13 @@ import duckdb
 import urllib.request
 import os
 
+
+try:
+    import duckdb
+except ImportError:
+    os.system('pip install duckdb')
+    import duckdb
+
 # Streamlit 설정
 st.set_page_config(
     page_title="Insurance Dashboard",
