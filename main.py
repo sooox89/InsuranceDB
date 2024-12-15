@@ -10,7 +10,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 # DuckDB 연결
-conn = duckdb.connect('/home/casey/workspace/DuckDB/Insurance.duckdb', read_only=True)
+conn = duckdb.connect('Insurance.duckdb', read_only=True)
 
 # 사이드바를 사용한 네비게이션
 st.sidebar.title("Navigation")
